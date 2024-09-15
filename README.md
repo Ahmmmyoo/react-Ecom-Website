@@ -1,5 +1,5 @@
+# <img height="30" src="./src/assets/ECOM-Logo.png"> E-Commerce Website
 
-# E-Commerce Website
 
 *Deployed on Netlify 😉*\
 [![Netlify Status](https://api.netlify.com/api/v1/badges/64224cf8-5267-408e-bf59-b0357de68480/deploy-status)](https://react-ecom-website-ahmmmyoo.netlify.app/)
