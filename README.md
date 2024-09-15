@@ -2,7 +2,7 @@
 # E-Commerce Website
 
 *Deployed on Netlify 😉*\
-[![Netlify Status]()]()
+[![Netlify Status](https://api.netlify.com/api/v1/badges/64224cf8-5267-408e-bf59-b0357de68480/deploy-status)](https://react-ecom-website-ahmmmyoo.netlify.app/)
 
 
 This is a modern and minimalistic e-commerce website built using React, Vite, and Tailwind CSS. The project displays a list of Apple products (iPhones, iPads, and Watches) with their specifications, and allows users to add them to a shopping cart.
