@@ -5,17 +5,19 @@ import products from '../data/products';
 const ProductsList = ({ addToCart }) => {
   return (
     <div className="container mx-auto py-6">
-      <h2 className="text-3xl font-bold mb-6 text-center">Apple Products</h2>
+      <div className="mb-6 text-3xl font-bold text-center flex justify-center">
+      <h2 className=" hover:scale-110 transition-all">Apple Products</h2>
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {products.map((product) => (
-          <div key={product.id} className="bg-white rounded-lg shadow-md p-6">
+          <div key={product.id} className="group bg-white rounded-lg shadow-md p-6 hover:shadow-xl shadow-[rgba(144,192,231,0.39)] hover:shadow-[rgba(144,192,231,0.73)] transition-all ">
             <img
               src={product.image}
               alt={product.name}
-              className="w-full h-48 object-cover mb-4 h-fit"
+              className="w-full h-48 object-cover mb-4 h-fit "
             />
-            <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
-            <p className="text-gray-600 mb-2">
+            <h3 className="text-xl font-semibold mb-2 group-hover:text-2xl group-hover:translate-x-3 transition-all">{product.name}</h3>
+            <p className="text-gray-600 mb-2 group-hover:text-gray-800 transition-all">
               <strong>Price:</strong> {product.price}
             </p>
             <div className="text-sm text-gray-500 mb-4">
@@ -27,7 +29,7 @@ const ProductsList = ({ addToCart }) => {
               <p><strong>Storage:</strong> {product.specs.storage}</p>
             </div>
             <button
-              className=" bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-500 transition w-full"
+              className=" bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-500 hover:scale-105 transition w-full"
               onClick={() => addToCart(product)} // Add product to cart
             >
               Add to Cart

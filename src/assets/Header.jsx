@@ -17,16 +17,16 @@ const Header = () => {
 
         {/* Navigation Links (Hidden on mobile) */}
         <nav className="hidden md:flex space-x-6">
-          <a href="#home" className="text-gray-600 hover:text-gray-900 transition">
+          <a href="#home" className="text-gray-600 hover:text-gray-900 hover:scale-105 transition">
             Home
           </a>
-          <a href="#shop" className="text-gray-600 hover:text-gray-900 transition">
+          <a href="#shop" className="text-gray-600 hover:text-gray-900 hover:scale-105 transition">
             Shop
           </a>
-          <a href="#about" className="text-gray-600 hover:text-gray-900 transition">
+          <a href="#about" className="text-gray-600 hover:text-gray-900 hover:scale-105 transition">
             About
           </a>
-          <a href="#contact" className="text-gray-600 hover:text-gray-900 transition">
+          <a href="#contact" className="text-gray-600 hover:text-gray-900 hover:scale-105 transition">
             Contact
           </a>
         </nav>

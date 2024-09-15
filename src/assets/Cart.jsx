@@ -17,15 +17,18 @@ const Cart = ({ cartItems, removeFromCart, clearCart }) => {
         <div>
           <ul>
             {cartItems.map((item) => (
-              <li key={item.id} className="flex justify-between items-center border-b py-4">
-                <div>
+              <li key={item.id} className="group hover:shadow-md m-2 rounded-lg flex justify-between items-center border-b py-4">
+                <div className="translate-x-4">
                   <h3 className="text-lg font-semibold">{item.name}</h3>
-                  <p className="text-sm text-gray-600">
-                    {item.quantity} x {item.price}
-                  </p>
+                  <div className="flex">
+                    <p className="text-sm text-gray-600 px-2">
+                      {item.quantity} x {item.price}
+                    </p>
+                    <p className="px-2 text-sm -translate-x-16 opacity-0 text-gray-600 group-hover:translate-x-0 group-hover:opacity-100 transition-all">{item.quantity > 1 ? `Total : $${(item.quantity) * parseFloat(item.price.replace('$', '').replace(',', ''))}` : ""}</p>
+                  </div>
                 </div>
                 <button
-                  className="text-red-500 hover:text-red-700"
+                  className="text-red-500 hover:text-red-700 -translate-x-4 group-hover:scale-105 group-hover:-translate-x-5"
                   onClick={() => removeFromCart(item.id)}
                 >
                   Remove
