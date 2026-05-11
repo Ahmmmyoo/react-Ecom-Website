@@ -1,110 +1,172 @@
-// src/data/products.js
 const products = [
-  // iPhones (12 items)
   {
     id: 1,
-    name: "iPhone 14 Pro",
-    image: "https://regen.pk/cdn/shop/products/REGEN-iPhone14ProMax-Frontback-DeepPurple-Pakistan_1_cf318a55-4d9c-49bc-890c-f481de0a1bbe.png?v=1681907898&width=1946",
-    specs: {
-      display: "6.1‑inch Super Retina XDR display",
-      processor: "A16 Bionic chip",
-      camera: "Pro camera system (48MP Main)",
-      storage: "128GB, 256GB, 512GB, 1TB",
-    },
-    price: "$999",
+    name: 'iPhone 15 Pro Max',
+    category: 'Phones',
+    price: 1199,
+    image:
+      'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=80',
+    tagline: 'Titanium flagship tuned for creators and power users.',
+    description:
+      'A premium performance phone with pro-grade imaging, all-day battery life, and a lightweight titanium build.',
+    finish: 'Natural Titanium',
+    availability: 'Ships in 24 hours',
+    featured: true,
+    specs: [
+      { label: 'Display', value: '6.7-inch Super Retina XDR' },
+      { label: 'Chip', value: 'A17 Pro' },
+      { label: 'Camera', value: '48MP main plus 5x telephoto' },
+      { label: 'Storage', value: '256GB' },
+    ],
+    highlights: ['Pro video workflow', 'USB-C', 'Studio-grade portraits'],
   },
   {
     id: 2,
-    name: "iPhone 14",
-    image: "https://iplanet.one/cdn/shop/files/iPhone_14_Purple_PDP_Image_Position-1A__WWEN.jpg?v=1691142418&width=1445",
-    specs: {
-      display: "6.1‑inch Super Retina XDR display",
-      processor: "A15 Bionic chip",
-      camera: "Dual camera system (12MP Main)",
-      storage: "128GB, 256GB, 512GB",
-    },
-    price: "$799",
+    name: 'iPhone 15',
+    category: 'Phones',
+    price: 899,
+    image:
+      'https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=1200&q=80',
+    tagline: 'Balanced everyday flagship with polished essentials.',
+    description:
+      'Designed for users who want excellent cameras, fast performance, and a clean Apple ecosystem experience.',
+    finish: 'Blue',
+    availability: 'In stock',
+    featured: false,
+    specs: [
+      { label: 'Display', value: '6.1-inch Super Retina XDR' },
+      { label: 'Chip', value: 'A16 Bionic' },
+      { label: 'Camera', value: '48MP main camera' },
+      { label: 'Storage', value: '128GB' },
+    ],
+    highlights: ['Dynamic Island', 'All-day battery', 'Ceramic Shield'],
   },
   {
     id: 3,
-    name: "iPhone 13 Pro",
-    image: "https://regen.pk/cdn/shop/files/REGEN-iPhone13Pro-Frontback-Silver-Pakistan.png?v=1682421163",
-    specs: {
-      display: "6.1‑inch Super Retina XDR display",
-      processor: "A15 Bionic chip",
-      camera: "Pro camera system (12MP Main)",
-      storage: "128GB, 256GB, 512GB, 1TB",
-    },
-    price: "$899",
+    name: 'iPad Pro 13',
+    category: 'Tablets',
+    price: 1299,
+    image:
+      'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=1200&q=80',
+    tagline: 'Ultra-thin tablet for design, sketching, and multitasking.',
+    description:
+      'A high-performance productivity screen that fits presentations, creative work, and executive mobility.',
+    finish: 'Space Black',
+    availability: 'Ships next business day',
+    featured: true,
+    specs: [
+      { label: 'Display', value: '13-inch Ultra Retina XDR' },
+      { label: 'Chip', value: 'M4' },
+      { label: 'Camera', value: '12MP Wide camera' },
+      { label: 'Storage', value: '256GB' },
+    ],
+    highlights: ['Apple Pencil Pro ready', 'Laptop-class power', 'OLED display'],
   },
-  // Add more iPhones (up to 12 items) with similar format
   {
     id: 4,
-    name: "iPhone 13",
-    image: "https://regen.pk/cdn/shop/products/Regen-iPhone-13-Blue.jpg?v=1674906995",
-    specs: {
-      display: "6.1‑inch Super Retina XDR display",
-      processor: "A15 Bionic chip",
-      camera: "Dual camera system (12MP Main)",
-      storage: "128GB, 256GB, 512GB",
-    },
-    price: "$699",
-  },
-  // Add 8 more iPhones here...
-  
-  // iPads (4 items)
-  {
-    id: 13,
-    name: "iPad Pro 12.9\"",
-    image: "https://cdn.homeshopping.pk/product_images/e/281/ipad-pro-13-select-cell-spacegray-202210__65213_zoom.jpg",
-    specs: {
-      display: "12.9-inch Liquid Retina XDR display",
-      processor: "M2 chip",
-      camera: "12MP Ultra Wide front camera",
-      storage: "128GB, 256GB, 512GB, 1TB, 2TB",
-    },
-    price: "$1,099",
+    name: 'iPad Air',
+    category: 'Tablets',
+    price: 699,
+    image:
+      'https://images.unsplash.com/photo-1561154464-82e9adf32764?auto=format&fit=crop&w=1200&q=80',
+    tagline: 'Lightweight tablet for meetings, travel, and hybrid work.',
+    description:
+      'A versatile option for teams that need dependable performance, a premium screen, and streamlined portability.',
+    finish: 'Starlight',
+    availability: 'In stock',
+    featured: false,
+    specs: [
+      { label: 'Display', value: '11-inch Liquid Retina' },
+      { label: 'Chip', value: 'M2' },
+      { label: 'Camera', value: '12MP Center Stage camera' },
+      { label: 'Storage', value: '128GB' },
+    ],
+    highlights: ['Portable form factor', 'Magic Keyboard ready', 'Touch ID'],
   },
   {
-    id: 14,
-    name: "iPad Air",
-    image: "https://myshop.pk/pub/media/catalog/product/cache/26f8091d81cea4b38d820a1d1a4f62be/a/p/apple-ipad-air-5-myshop-pk-1_1.jpg",
-    specs: {
-      display: "10.9-inch Liquid Retina display",
-      processor: "M1 chip",
-      camera: "12MP Ultra Wide front camera",
-      storage: "64GB, 256GB",
-    },
-    price: "$599",
-  },
-  // Add 2 more iPads...
-
-  // Apple Watches (6 items)
-  {
-    id: 17,
-    name: "Apple Watch Series 8",
-    image: "https://xtra.pk/wp-content/uploads/2023/07/64EADD04-5365-4C48-B0A9-60A07701E6E3.jpeg",
-    specs: {
-      display: "Always-On Retina display",
-      processor: "S8 SiP with 64-bit dual-core processor",
-      healthFeatures: "Blood Oxygen app, ECG app",
-      storage: "32GB",
-    },
-    price: "$399",
+    id: 5,
+    name: 'Apple Watch Series 9',
+    category: 'Wearables',
+    price: 429,
+    image:
+      'https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?auto=format&fit=crop&w=1200&q=80',
+    tagline: 'Health, productivity, and subtle luxury on your wrist.',
+    description:
+      'A polished smartwatch designed to keep wellness insights, notifications, and quick interactions close at hand.',
+    finish: 'Midnight Aluminum',
+    availability: 'Limited stock',
+    featured: false,
+    specs: [
+      { label: 'Display', value: 'Always-On Retina display' },
+      { label: 'Chip', value: 'S9 SiP' },
+      { label: 'Health', value: 'ECG, blood oxygen, sleep tracking' },
+      { label: 'Battery', value: 'Up to 18 hours' },
+    ],
+    highlights: ['Double tap gesture', 'Fitness insights', 'Crash detection'],
   },
   {
-    id: 18,
-    name: "Apple Watch SE",
-    image: "https://www.paklap.pk/media/catalog/product/cache/2cc443e44e97595ea39006016c876eaa/c/o/copy-15-czone.com.pk-1540-13499-090822075111.jpg.webp",
-    specs: {
-      display: "Retina display",
-      processor: "S8 SiP with 64-bit dual-core processor",
-      healthFeatures: "Heart rate sensor",
-      storage: "32GB",
-    },
-    price: "$249",
+    id: 6,
+    name: 'Apple Watch Ultra 2',
+    category: 'Wearables',
+    price: 799,
+    image:
+      'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=80',
+    tagline: 'Rugged premium watch built for endurance and adventure.',
+    description:
+      'Combines a bold titanium case, brighter display, and advanced outdoor tracking for active professionals.',
+    finish: 'Titanium',
+    availability: 'Ships in 48 hours',
+    featured: true,
+    specs: [
+      { label: 'Display', value: '49mm Always-On Retina display' },
+      { label: 'Chip', value: 'S9 SiP' },
+      { label: 'Health', value: 'Precision dual-frequency GPS' },
+      { label: 'Battery', value: 'Up to 36 hours' },
+    ],
+    highlights: ['Action button', 'Depth gauge', 'Adventure-ready build'],
   },
-  // Add 4 more Watches...
+  {
+    id: 7,
+    name: 'AirPods Pro',
+    category: 'Audio',
+    price: 249,
+    image:
+      'https://images.unsplash.com/photo-1606220588913-b3aacb4d2f37?auto=format&fit=crop&w=1200&q=80',
+    tagline: 'Immersive audio with adaptive comfort and focus.',
+    description:
+      'Premium earbuds with active noise cancellation, seamless switching, and a compact design for daily carry.',
+    finish: 'White',
+    availability: 'In stock',
+    featured: false,
+    specs: [
+      { label: 'Audio', value: 'Adaptive EQ with ANC' },
+      { label: 'Mode', value: 'Transparency and spatial audio' },
+      { label: 'Battery', value: 'Up to 6 hours per charge' },
+      { label: 'Case', value: 'USB-C MagSafe charging case' },
+    ],
+    highlights: ['Conversation awareness', 'Personalized audio', 'Pocket-friendly'],
+  },
+  {
+    id: 8,
+    name: 'MacBook Air 15',
+    category: 'Laptops',
+    price: 1499,
+    image:
+      'https://images.unsplash.com/photo-1517336714739-489689fd1ca8?auto=format&fit=crop&w=1200&q=80',
+    tagline: 'Thin-and-light notebook for teams that move fast.',
+    description:
+      'A polished productivity machine with long battery life, silent performance, and a display suited for focused work.',
+    finish: 'Silver',
+    availability: 'Ships next business day',
+    featured: false,
+    specs: [
+      { label: 'Display', value: '15.3-inch Liquid Retina' },
+      { label: 'Chip', value: 'M3' },
+      { label: 'Memory', value: '16GB unified memory' },
+      { label: 'Storage', value: '512GB SSD' },
+    ],
+    highlights: ['Fanless design', 'All-day battery', 'Enterprise-ready'],
+  },
 ];
 
 export default products;
